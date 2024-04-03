@@ -11,17 +11,22 @@ import java.util.List;
 
 public class ListaPacoteActivity extends AppCompatActivity {
 
+    private final String TITULO_APPBAR= "Pacotes De Viagens";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_pacote);
-        setTitle("Pacotes De Viagens");
+
+        setTitle(TITULO_APPBAR);
+
+        confguraLista();
+
+
+    }
+
+    private void confguraLista() {
         ListView listaDePacotes = findViewById(R.id.lista_pacotes_listview);
-
         List<Pacote> pacotes = new PacoteDAO().lista();
-
         listaDePacotes.setAdapter(new ListaPacoteAdapter(pacotes,this));
-
-
     }
 }
