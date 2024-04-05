@@ -26,7 +26,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/item_pacote_imagem"
+                android:id="@+id/resumo_pacote_imagem"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:importantForAccessibility="no"
@@ -40,7 +40,7 @@
                 tools:src="@sample/pacotes.json/pacotes/imagem" />
 
             <TextView
-                android:id="@+id/item_pacote_cidade"
+                android:id="@+id/resumo_pacote_cidade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -49,11 +49,11 @@
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/item_pacote_imagem"
-                app:layout_constraintEnd_toEndOf="@+id/item_pacote_imagem"
+                app:layout_constraintBottom_toBottomOf="@+id/resumo_pacote_imagem"
+                app:layout_constraintEnd_toEndOf="@+id/resumo_pacote_imagem"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/item_pacote_imagem"
-                app:layout_constraintTop_toTopOf="@+id/item_pacote_imagem"
+                app:layout_constraintStart_toStartOf="@+id/resumo_pacote_imagem"
+                app:layout_constraintTop_toTopOf="@+id/resumo_pacote_imagem"
                 app:layout_constraintVertical_bias="1.0"
                 tools:text="@sample/pacotes.json/pacotes/local" />
 
@@ -64,10 +64,10 @@
                 android:background="@android:color/holo_orange_dark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/item_pacote_imagem" />
+                app:layout_constraintTop_toBottomOf="@+id/resumo_pacote_imagem" />
 
             <TextView
-                android:id="@+id/item_pacote_dias"
+                android:id="@+id/resumo_pacote_dias"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -80,15 +80,15 @@
                 tools:text="@sample/pacotes.json/pacotes/dias" />
 
             <TextView
-                android:id="@+id/item_pacote_valor"
+                android:id="@+id/resumo_pacote_valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:textColor="@android:color/holo_green_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/item_pacote_dias"
-                app:layout_constraintTop_toBottomOf="@+id/item_pacote_dias"
+                app:layout_constraintStart_toStartOf="@id/resumo_pacote_dias"
+                app:layout_constraintTop_toBottomOf="@+id/resumo_pacote_dias"
                 tools:text="@sample/pacotes.json/pacotes/preco" />
 
 

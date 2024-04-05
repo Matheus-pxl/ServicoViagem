@@ -1,6 +1,8 @@
 package com.projeto.servicoviajem.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 import com.projeto.servicoviajem.R;
@@ -19,12 +21,14 @@ public class ListaPacoteActivity extends AppCompatActivity {
 
         setTitle(TITULO_APPBAR);
 
-        confguraLista();
+        configuraLista();
 
+        Intent intent = new Intent(this, ResumoPacoteActivity.class);
+        startActivity(intent);
 
     }
 
-    private void confguraLista() {
+    private void configuraLista() {
         ListView listaDePacotes = findViewById(R.id.lista_pacotes_listview);
         List<Pacote> pacotes = new PacoteDAO().lista();
         listaDePacotes.setAdapter(new ListaPacoteAdapter(pacotes,this));

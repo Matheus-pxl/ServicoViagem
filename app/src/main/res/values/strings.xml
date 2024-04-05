@@ -6,4 +6,6 @@
     <string name="_2_dias">2 Dias</string>
     <string name="_245_00">245,00</string>
     <string name="r_245_00">R$245,00</string>
+    <string name="pre_o_final">Preço final:</string>
+    <string name="realizar_pagamento">Finalizar Compra</string>
 </resources>
